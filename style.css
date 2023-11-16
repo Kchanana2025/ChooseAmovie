@@ -205,11 +205,11 @@ body {
     z-index=-9;
 }
 
-.book .right .left_card .title {
+.book .right .title {
     color: #fff;
 }
 
-.book .right .left_card .crd {
+.book .right .crd {
     width: 100%;
     overflow-x: auto;
     /* overflow-x:auto ka kaam hota hai ki jaise hi right side se content zyada hota hai ,wo usko scroll mein convert kr deta hai */
@@ -221,17 +221,17 @@ body {
 }
 
 /* hm bss neeche scrollbar ko hide kr rhe hain */
-.book .right .left_card .crd::-webkit-scrollbar {
+.book .right .crd::-webkit-scrollbar {
     height: 3px;
     background: rgb(184, 184, 184, .5);
 }
 
-.book .right .left_card .crd::-webkit-scrollbar-thumb {
+.book .right .crd::-webkit-scrollbar-thumb {
     height: 3px;
     background: rgb(184, 184, 184, .5);
 }
 
-.book .right .left_card .crd li {
+.book .right .crd li {
     list-style: none;
     color: #fff;
     min-width: 40px;
@@ -240,4 +240,21 @@ body {
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+}
+
+.book .right .crd li h6:nth-child(2) {
+    background: transparent;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    transition: .3s linear;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.book .right .crd li h6:nth-child(2):hover {
+    background: #fd6565;
 }
