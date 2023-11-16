@@ -193,3 +193,51 @@ body {
     width: 45%;
     border: 1px solid #fff;
 }
+
+.book .right .date_type::before {
+    content: '';
+    position: absolute;
+    width: 102%;
+    height: 210px;
+    left: -15px;
+    top: 0;
+    background: linear-gradient(180deg, transparent, #1f2025);
+    z-index=-9;
+}
+
+.book .right .left_card .title {
+    color: #fff;
+}
+
+.book .right .left_card .crd {
+    width: 100%;
+    overflow-x: auto;
+    /* overflow-x:auto ka kaam hota hai ki jaise hi right side se content zyada hota hai ,wo usko scroll mein convert kr deta hai */
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    border-top: 1px solid rgb(184, 184, 184, .2);
+    padding: 5px 0;
+}
+
+/* hm bss neeche scrollbar ko hide kr rhe hain */
+.book .right .left_card .crd::-webkit-scrollbar {
+    height: 3px;
+    background: rgb(184, 184, 184, .5);
+}
+
+.book .right .left_card .crd::-webkit-scrollbar-thumb {
+    height: 3px;
+    background: rgb(184, 184, 184, .5);
+}
+
+.book .right .left_card .crd li {
+    list-style: none;
+    color: #fff;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
