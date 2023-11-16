@@ -37,6 +37,8 @@ Array.from(document.getElementsByClassName('date_point')).forEach((el) => {
         el.classList.add('h6_active')
     }
 })
+const today_date = new Date()
+const today = today_date.getDate()
 let pvr = [
     {
         pvr: 'PVR Vegus',
@@ -56,7 +58,7 @@ let pvr = [
         b: [8, 5],
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
-        date: 16,
+        date: today,
         img: 'img/jawan.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
         background: 'img/bg.png',
@@ -79,7 +81,7 @@ let pvr = [
         b: [8, 5, 12, 13, 14],
         a: [],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
-        date: 16,
+        date: today,
         img: 'img/Gadar2.jpg',
         video: 'video/Gadar2 Official Trailer - 11th August - Sunny Deol - Ameesha Patel - Anil Sharma - Zee Studios.mp4',
         background: 'img/gadar_bg.jpg',
@@ -102,7 +104,7 @@ let pvr = [
         b: [8, 5],
         a: [18, 10],
         price: [800, 800, 560, 560, 560, 560, 430, 430],
-        date: 25,
+        date: today,
         img: 'img/jawan.jpg',
         video: 'video/Jawan Official Trailer-(HDvideo9).mp4',
         background: 'img/bg.png',
