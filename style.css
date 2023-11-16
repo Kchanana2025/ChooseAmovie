@@ -189,4 +189,7 @@ body {
 }
 
 .book .right .date_type .left_card,
-.right_card {}
+.right_card {
+    width: 45%;
+    border: 1px solid #fff;
+}
